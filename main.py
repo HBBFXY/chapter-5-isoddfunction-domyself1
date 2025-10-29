@@ -10,4 +10,8 @@ def isOdd(value):
     """
     # 学生实现代码区域
     # 提示：首先检查类型是否为整数，然后检查奇偶性
-    
+    if type(value) is not int:
+            return False
+        
+    # 检查是否为奇数（使用位运算，效率高且正确处理负数）
+    return value % 2 != 0
